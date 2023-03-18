@@ -30,15 +30,15 @@ print('zero_dict -', str(zero_dict))
 print('\nПреобразование в целочисленный тип данных:')
 bool_true = True
 bool_false = False
-string = "0.1"
+string = "0"
 my_int = 1
 my_float = 1.1
 zero = int()
-print('bool_true -', float(bool_true))
-print('bool_false -', float(bool_false))
-print('string -', float(string))
-print('my_int -', float(my_int))
-print('my_float -', float(my_float))
+print('bool_true -', int(bool_true))
+print('bool_false -', int(bool_false))
+print('string -', int(string))
+print('my_int -', int(my_int))
+print('my_float -', int(my_float))
 print('zero -', zero)
 
 print('\nПреобразования в список, кортеж, множество и frozenset')
