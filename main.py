@@ -41,7 +41,7 @@ print('my_int -', float(my_int))
 print('my_float -', float(my_float))
 print('zero -', zero)
 
-print('Преобразования в список, кортеж, множество и frozenset')
+print('\nПреобразования в список, кортеж, множество и frozenset')
 string = "string"
 my_list = [0]
 my_tuple = 0,
@@ -49,10 +49,20 @@ my_set = {0}
 my_frozenset = frozenset()
 my_dict = {0:0}
 zero_list = list()
-print('string -', list(string))
-print('my_list -', list(my_list))
-print('my_tuple -', list(my_tuple))
-print('my_set -', list(my_set))
-print('my_frozenset -', list(my_frozenset))
-print('my_dict -', list(my_dict))
-print('zero_list -', list(zero_list))
+print('string -', frozenset(string))
+print('my_list -', frozenset(my_list))
+print('my_tuple -', frozenset(my_tuple))
+print('my_set -', frozenset(my_set))
+print('my_frozenset -', frozenset(my_frozenset))
+print('my_dict -', frozenset(my_dict))
+print('zero_list -', frozenset(zero_list))
+
+print('\nПреобразования в словарь')
+my_list = ['01', ["1",2], (2,"3"), {3.3,4},
+ frozenset({5,6})]
+my_tuple = ('01', ["1",2], (2,"3"), {3.3,4},
+ frozenset({5,6}))
+my_set = {'01', (2,"3"), frozenset({5,6})}
+print(dict(my_list))
+print(dict(my_tuple))
+print(dict(my_set))
