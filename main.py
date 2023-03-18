@@ -66,3 +66,7 @@ my_set = {'01', (2,"3"), frozenset({5,6})}
 print(dict(my_list))
 print(dict(my_tuple))
 print(dict(my_set))
+
+my_dict = dict(string = 'string', number = 0,
+ list = [])
+print(my_dict)
