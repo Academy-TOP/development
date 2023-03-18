@@ -30,13 +30,29 @@ print('zero_dict -', str(zero_dict))
 print('\nПреобразование в целочисленный тип данных:')
 bool_true = True
 bool_false = False
-string = "0"
+string = "0.1"
 my_int = 1
 my_float = 1.1
 zero = int()
-print('bool_true -', int(bool_true))
-print('bool_false -', int(bool_false))
-print('string -', int(string))
-print('my_int -', int(my_int))
-print('my_float -', int(my_float))
+print('bool_true -', float(bool_true))
+print('bool_false -', float(bool_false))
+print('string -', float(string))
+print('my_int -', float(my_int))
+print('my_float -', float(my_float))
 print('zero -', zero)
+
+print('Преобразования в список, кортеж, множество и frozenset')
+string = "string"
+my_list = [0]
+my_tuple = 0,
+my_set = {0}
+my_frozenset = frozenset()
+my_dict = {0:0}
+zero_list = list()
+print('string -', list(string))
+print('my_list -', list(my_list))
+print('my_tuple -', list(my_tuple))
+print('my_set -', list(my_set))
+print('my_frozenset -', list(my_frozenset))
+print('my_dict -', list(my_dict))
+print('zero_list -', list(zero_list))
