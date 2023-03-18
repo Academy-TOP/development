@@ -70,3 +70,8 @@ print(dict(my_set))
 my_dict = dict(string = 'string', number = 0,
  list = [])
 print(my_dict)
+
+print('\nЗадача "Стартапер"')
+my_basket = {}
+my_basket[input()] = int(input())
+print(my_basket)
